@@ -1,4 +1,4 @@
-#!/usr/bin/
+#!/usr/bin/python3
 if __name__ == "__main__":
     import sys
     x = len(sys.argv) - 1
