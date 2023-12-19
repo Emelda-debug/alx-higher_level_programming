@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""class Square that defines a square"""
+"""Class Square that defines a square"""
 
 class Square:
     """Defined square based on 3-square.py"""
@@ -8,7 +8,7 @@ class Square:
         """Initialization
 
         Arguments:
-        size (int) size of the new square
+        size (int): Size of the new square
         """
         self.__size = size
 
@@ -30,7 +30,7 @@ class Square:
         return (self.__size * self.__size)
 
     def my_print(self):
-        """prints in stdout the square with the character #"""
+        """Prints in stdout the square with the character #"""
         for x in range(0, self.__size):
             [print("#", end="") for y in range(self.__size)]
             print("")
