@@ -1,0 +1,71 @@
+Usage:
+Function that divides all elements of a matrix.
+
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+>>> matrix = [[2, 4, 6], [3, 6, 9], [4, 8, 12]]
+>>> print(matrix_divided(matrix, 2))
+[[1, 2, 3], [1.5, 3, 4.5] [2, 4, 6]
+
+>>>matrix = [[1,2,3] [3,4,5]]
+>>> print(matrix_divided(matrix, 3))
+[[0.33, 0.67, 1] [1, 1.33, 1.67]
+
+>>>matrix = [[1,2,3] [3,4,5]]
+>>> print(matrix_divided(matrix, 3))
+[[0.33, 0.67, 1] [1, 1.33, 1.67]]
+
+This function can also handle floating-point numbers
+
+>>> matrix = [[1.5, 2.0, 3.3] [5.5, 9.8, 10.8]]
+>>> print(matrix_divided(matrix, 4))
+[[0.38, 0.5, 0.83] [1.4, 2.5, 2.7]]
+
+TypeError is raised if list is empty
+
+>>> matrix = []
+>>> print(matrix_divided(matrix, 6))
+Traceback (most recent call last):
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+However;
+
+>>>matrix = [[]]
+>>> print(matrix_divided(matrix, 64))
+[[]]
+
+TypeError is raised if matrix is not list of lists consisting of either ints or
+floats
+
+>>>matrix = [1, 2, 3]
+>>> print(matrix_divided(matrix, 9))
+Traceback (most recent call last):
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+TypeError is raised if matrix has elemments neither ints nor floats
+
+>>> matrix = [2,6,8] [7, "hello", 8]
+>>> print(matrix_divided(matrix, 5))
+Traceback (most recent call last):
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+TypeError is raised if rows in a matrix are unequal sizes
+
+>>> matrix = [3,5,7,2] [5, 8]
+>>> print(matrix_divided(matrix, 4))
+Traceback (most recent call last):
+TypeError: Each row of the matrix must have the same size
+
+TypeError is also raised if div is not a nnt or float
+
+>>> matrix = [3,4,5] [5, 7, 8]
+>>> print(matrix_divided(matrix, "cool"))
+Traceback (most recent call last):
+TypeError: div must be a number
+
+ZeroDivisionError is raised if div is 0
+
+>>> matrix = [2, 4, 6] [5,8,9]
+>>> print(matrix_divided(matrix,0))
+Traceback (most recent call last):
+ZeroDivisionError: division by zero

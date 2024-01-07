@@ -1,0 +1,51 @@
+Usage:
+
+function that prints a text with 2 new lines after each of these characters: ., ? and :
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+>>> text_indentation("People.")
+People.
+<blank>
+
+>>> text_indentation("   Are we there yet?")
+Are we there yet?
+<blank>
+
+>>> text_indentation("   Hold on:    This is not your house.   ")
+Hold on:
+<blank>
+This is not your house.
+<blank>
+
+>>> text_indentation("My name is, NO")
+My name is, NO
+
+>>> text_indentation("Hi\n Emelda\n")
+Hi
+<blank>
+Emelda
+<blank>
+
+>>> text_indentation("Hello there. My name is Emelda: I love design. Another thing is\n I love software engineering and food?"
+Hello there.
+<blank>
+My name is Emelda:
+<blank>
+I love design.
+<blank>
+Another thing is
+<blank>
+I love software engineering and food
+<blank>
+
+TypeError is raised if text is not a string
+
+>>> text_indentation(4.5)
+Traceback (most recent call last):
+TypeError: text must be a string
+
+>>> text_indentation("I am 24 years old")
+Traceback (most recent call last):
+TypeError: text must be a string
+
+

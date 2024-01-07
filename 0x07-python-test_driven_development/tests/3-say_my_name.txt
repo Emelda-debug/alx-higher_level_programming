@@ -1,0 +1,34 @@
+Usage:
+
+Function that prints My name is <first name> <last name>
+
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+>>> say_my_name("Emelda", "Mada")
+My name is Emelda Mada
+
+>>> say_my_name("Takudzwa", "Makaza")
+My name is Takudzwa Makaza
+
+This function works even if no last name is provided, am empty string is provided
+
+>>> say_my_name("Emelda")
+My name is Emelda
+
+TypeError is raised if first_name`` and ``last_name``` are not strings
+
+>>> say_my_name(5, "Martha")
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+>>> say_my_name("Martha",5)
+Traceback (most recent call last):
+TypeError: last_name must be a string
+
+TypeError is raised if no name is provided
+
+>>> say_my_name()
+Traceback (most recent call last):
+TypeError: say_my_name() missing 1 required positional argument: 'first_name'
+
+

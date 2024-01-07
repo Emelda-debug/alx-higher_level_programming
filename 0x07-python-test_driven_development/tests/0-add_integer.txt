@@ -1,0 +1,63 @@
+Test Case
+This module defines an integer addition function 
+
+Usage:
+This function adds integer and returns the sum
+
+>>> add_integer = __import__('0-add_integer').add_integer
+
+>>> add_integer(9, 6)
+15
+
+>>> add_integer(4, -3)
+-1
+
+This function also works with floats
+
+>>> add_integer(2.0, 5.0)
+7.0
+
+Floats are casted to ints before addition
+
+>>> add_integer(3.9, 2.3)
+6.2
+
+>>> add_integer(-8.8, -0.8)
+-0.8
+
+This function also works with floats and non-floats
+
+>>> add_integer(4.6, -6)
+-2.6
+
+The second argument is 98
+
+>>> add_integer(2)
+100
+
+Type Error is raised for non-numbers
+
+>>> add_integer("apple", 9)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+>>> add_integer(2, "emelda")
+Traceback (most recent call last):
+TypeError: b must be an integer
+
+If both values are not correct, an error message only for the first argument is printed
+
+>>> add_integer("ALX", "school")
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+Function does not work for infinity and Not a Number NaN values
+
+>>> add_integer(8, float('inf'))
+Traceback (most recent call last):
+OverflowError: cannot convert float infinity to integer
+
+>>> add_integer(float('nan'))
+Traceback (most recent call last):
+ValueError: cannot convert float NaN to integer
+
