@@ -1,0 +1,48 @@
+Usage:
+>>> MyList = __import__('1-my_list').MyList
+
+Returns a list object
+
+>>> my_list = MyList()
+>>>my_list.append(1)
+>>> my_list.append(4)
+>>> my_list.append(2)
+>>> my_list.append(3)
+>>> my_list.append(5)
+>>> print(my_list)
+[1, 4, 2, 3, 5]
+>>> my_list.print_sorted()
+[1, 2, 3, 4, 5]
+>>> print(my_list)
+[1, 4, 2, 3, 5]
+
+This function can also take a passed list
+
+>>> list_eg = [6, 9, 2]
+>>> my_list = MyList(list_eg)
+[6, 9, 2]
+
+
+This function can also take an empty list
+
+>>> list_eg = []
+>>> my_list = MyList(list_eg)
+[]
+>>> my_list.print_sorted()
+[]
+
+This function can take same numbers and negative numbers
+
+>>> list_eg = [4, 4, 4]
+>>> my_list = MyList(list_eg)
+[4, 4, 4]
+>>> my_list.print_sorted()
+[4, 4, 4]
+
+>>> list_eg = [-6, -8, -2]
+>>> my_list = MyList(list_eg)
+[-6, -8, -2]
+>>> my_list.print_sorted()
+[-8, -6, -2]
+
+
