@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" class MyInt that inherits from int """
+""" class MyInt that inherits int """
 
 class MyInt(int):
     """ will invert == and != because MyInt is a rebel lol"""

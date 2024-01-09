@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ Function that returns True if the object is exactly
-an instance of a class that inherited from; otherwise False """
+an instance of a class that it inherits; otherwise False """
 
 def is_kind_of_class(obj, a_class):
     """ To verify if an object is exactly an instance of the specified class
